@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.log
+*.pot
+*.pyc
+
+.Python
+.venv/
+.idea/
+
+db.sqlite3
+.DS_Store
+
+.vscode/
+
+phrase_api/settings.py

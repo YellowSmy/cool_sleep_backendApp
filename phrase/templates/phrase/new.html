@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+    <h3>명언 추가</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="완료">
+    </form>
+</html>

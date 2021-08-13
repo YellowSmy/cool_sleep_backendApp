@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<h2>명언</h2>
+<a href="{% url 'createphrase' %}">명언 추가</a> <a href="{% url 'createknowledge' %}">수면 지식 추가</a>
+<br>
+<div style="overflow-y: auto; height: 100px;">
+    <p >
+    {% for phrase in phrases %}
+        <a href="{% url 'showPhrase' phrase.id %}">{{phrase.content}}</a>
+        <br>
+    {% endfor %}
+    </p>
+</div>
+<br>
+<br> 
+<h2>수면 지식</h2>
+<div style="overflow-y: auto; height: 200px;">
+    {% for sleepknowledge in knowledges %}
+        <a href="{% url 'showKnowledge' sleepknowledge.id %}">{{sleepknowledge.content}}<br/></a> 
+        
+    {% endfor %}
+</div>
+
+</html>
