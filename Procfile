@@ -1,1 +1,1 @@
-web:gunicorn myapp.wsgi 
+web: gunicorn phrase_api.wsgi --log-file=-
