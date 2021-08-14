@@ -1,6 +1,10 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <a href="{% url 'phraselist' %}">목록으로 이동</a>
 <a href="{% url 'updatephrase' phrase.id %}">수정</a>
 <h3>{{phrase.content}}</h3>
 <h3>{{knowledge.content}}</h3>
 <br/>
 <a href="{% url 'deletephrase' phrase.id %}" onclick="return confirm('정말 삭제하시겠습니까?')">삭제하기</a>
+</html>
