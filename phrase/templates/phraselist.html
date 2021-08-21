@@ -1,26 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>명언</h2>
-<a href="{% url 'createphrase' %}">명언 추가</a> <a href="{% url 'createknowledge' %}">수면 지식 추가</a>
-<br>
-<div style="overflow-y: auto; height: 100px;">
-    <p >
-    {% for phrase in phrases %}
-        <a href="{% url 'showPhrase' phrase.id %}">{{phrase.content}}</a>
+<html style="text-align: center;">
+    <head>
+        <title>명언 설정</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    
+    <body>
+        <h3>명언</h3>
+        <div style="overflow-y: auto; height: 200px;">
+            <p>
+                {% for phrase in phrases %}
+                <a href="{% url 'showPhrase' phrase.id %}">{{phrase.content}}<br></a>  
+                {% endfor %}
+            </p>
+        </div>
         <br>
-    {% endfor %}
-    </p>
-</div>
-<br>
-<br> 
-<h2>수면 지식</h2>
-<div style="overflow-y: auto; height: 200px;">
-    {% for sleepknowledge in knowledges %}
-        <a href="{% url 'showKnowledge' sleepknowledge.id %}">{{sleepknowledge.content}}<br/></a> 
-        
-    {% endfor %}
-</div>
 
+        <h3>수면 지식</h3>
+        <div style="overflow-y: auto; height: 200px;">
+            <p>
+                {% for sleepknowledge in knowledges %}
+                <a href="{% url 'showKnowledge' sleepknowledge.id %}">{{sleepknowledge.content}}<br/></a>  
+                {% endfor %}
+            </p>
+        </div>
+        <a href="{% url 'createphrase' %}">명언 추가</a> <a href="{% url 'createknowledge' %}">수면 지식 추가</a>
+        <br>
+        <br>
+        <br>
+    </body>
 </html>
