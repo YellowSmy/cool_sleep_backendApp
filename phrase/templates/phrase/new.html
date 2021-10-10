@@ -1,7 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
+<html style="text-align: center;">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h3>명언 추가</h3>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+<link rel="stylesheet" href="{% static 'css/createStyle.css' %}">
+</head>
+
+<body>
+        <h3>명언 추가</h3>
     <form method="POST">
         {% csrf_token %}
         <table>
@@ -9,4 +16,5 @@
         </table>
         <input type="submit" value="완료">
     </form>
+</body>
 </html>

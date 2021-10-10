@@ -1,6 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html style="text-align: center;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <link rel="stylesheet" href="{% static 'css/createStyle.css' %}"
+</head>
+
     <h3>수면 지식 수정</h3>
     <form method="POST">
         {% csrf_token %}
