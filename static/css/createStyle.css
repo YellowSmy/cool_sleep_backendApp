@@ -1,20 +1,20 @@
 @font-face {
 
     font-family: 'S-CoreDream-9Black';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    src: url('/static/fonts/S-CoreDream-9Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @keyframes fadein {
-    from {background-image: url("/static/images/img1.png");}
-    to {background-image: url("/static/images/background.png");}
+    from {background-image: url('/static/images/img1.png');}
+    to {background-image: url('/static/images/background.png');}
 }
 
 
 html {
     font-family: 'S-CoreDream-9Black', sans-serif;
-    background: url("/static/images/background.png") no-repeat center center fixed;  
+    background: url('/static/images/background.png') no-repeat center center fixed;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url("/static/fonts/S-CoreDream-9Black.4bb6673b60ca.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadein {
+    from {background-image: url("/static/images/img1.17f8491ad00c.png");}
+    to {background-image: url("/static/images/background.5fa3e64e8201.png");}
+}
+
+html {
+    font-family: 'S-CoreDream-9Black', sans-serif;
+    background: url("/static/images/background.5fa3e64e8201.png") no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    animation: fadein 5s;
+
+}
+
+h3 {
+    color: aliceblue;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#phraseli {
+    color: blanchedalmond;
+    line-height: 35px;
+}
+
+#knowledgeli {
+    color: blanchedalmond;
+    line-height: 35px;
+}
+
+
+p {
+    font-weight: 400;
+}
+
+
+
+
+
+
